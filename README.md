@@ -2,19 +2,14 @@
 ## Domain Proyek
 Domain yang dipakai untuk proyek ini adalah penyakit **Cardiovascular Disease**
 ![kardiovascular](https://github.com/user-attachments/assets/cff4329c-61d2-45cb-89cf-5f41a0644962)
-## Latar Belakang
+
+### Latar Belakang
 Penyakit kardiovaskular (CVD) merupakan penyebab utama kematian global, menyumbang sekitar 32% dari seluruh kematian di dunia, atau sekitar 17,9 juta orang setiap tahunnya [1]. Penyakit ini mencakup gangguan pada jantung dan pembuluh darah, seperti penyakit jantung koroner, penyakit serebrovaskular, dan hipertensi. Banyak faktor risiko yang berkontribusi terhadap terjadinya penyakit ini, termasuk hipertensi, hiperglikemia, hiperkolesterolemia, merokok, obesitas, dan gaya hidup tidak aktif [2].
 
 Deteksi dini terhadap risiko CVD sangat penting untuk menurunkan angka morbiditas dan mortalitas. Namun, metode konvensional seperti pemeriksaan laboratorium atau imaging tidak hanya mahal tetapi juga membutuhkan infrastruktur medis yang memadai, yang seringkali tidak tersedia di wilayah dengan sumber daya terbatas. Oleh karena itu, diperlukan pendekatan berbasis data yang lebih efisien, cepat, dan terjangkau. Machine learning (ML) menawarkan solusi potensial dengan kemampuan untuk menganalisis data klinis secara lebih cepat dan akurat, sehingga memungkinkan identifikasi individu berisiko tinggi bahkan sebelum timbulnya gejala klinis [3].
 
 Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan dataset Cardiovascular Disease dari Kaggle, dengan tujuan untuk memprediksi risiko CVD berdasarkan data klinis seperti usia, tekanan darah, kadar kolesterol, gaya hidup, dan faktor lainnya. Dengan model prediktif ini, diharapkan dapat membantu tenaga medis dalam pengambilan keputusan klinis secara lebih tepat, cepat, dan berbasis data.
 
-### Referensi:
-[1] World Health Organization. (2021). Cardiovascular diseases (CVDs). Available: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
-
-[2] Mendis, S., Puska, P., & Norrving, B. (2011). Global Atlas on Cardiovascular Disease Prevention and Control. Geneva: World Health Organization.
-
-[3] Dilsizian, S. E., & Siegel, E. L. (2014). Artificial intelligence in medicine and cardiac imaging: Harnessing big data and advanced computing to provide personalized medical diagnosis and treatment. Current Cardiology Reports, 16(1), 441.
 ## Business Understanding
 ### Problem Statements
 - **Pernyataan Masalah 1**: Penyakit kardiovaskular merupakan salah satu penyebab utama kematian di dunia, namun metode deteksi yang tersedia saat ini masih mahal dan tidak terjangkau bagi seluruh populasi.
@@ -40,6 +35,10 @@ Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan 
 ## Data Understanding
 Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset). Dataset ini berisi data klinis pasien yang terdiri dari berbagai parameter medis yang umum dikumpulkan dalam pemeriksaan kesehatan rutin.
 
+**Jumlah Data**: 70000
+**Jumlah Fitur**: 13 kolom
+![struktur dataset](https://github.com/user-attachments/assets/fc9d33f6-6787-4ab4-b0bb-6f6d3c2d3628)
+
 ### Variabel-variabel:
 - `age`: usia pasien dalam satuan hari.
 - `gender`: jenis kelamin (1: perempuan, 2: laki-laki).
@@ -55,9 +54,16 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 - `cardio`: label target (0: tidak ada penyakit kardiovaskular, 1: ada penyakit kardiovaskular).
 
 ### Exploratory Data Analysis (EDA)
+- Melihat distribusi kelas target (`cardio`) untuk memahami apakah ada imbalance.
+![distribusi target](https://github.com/user-attachments/assets/c7fa28ab-7f75-412a-8693-c713b6b988c3)
+| Kelas `cardio` | Deskripsi                                | Jumlah Data | Persentase |
+|---------------|------------------------------------------|-------------|------------|
+| **0**         | Tidak memiliki penyakit kardiovaskular    | 35,021      | 50.03%     |
+| **1**         | Memiliki penyakit kardiovaskular          | 34,979      | 49.97%     |
+
+
 - Melihat distribusi umur pasien setelah dikonversi ke tahun.
 - Visualisasi korelasi antar fitur menggunakan heatmap.
-- Melihat distribusi kelas target (`cardio`) untuk memahami apakah ada imbalance.
 
 ## Data Preparation
 - Penghapusan kolom `id` karena hanya identifier.
@@ -97,3 +103,10 @@ Tahapan ini diperlukan untuk membersihkan data dari noise, memudahkan interpreta
 
 ### Kesimpulan
 Model Random Forest Classifier dengan hyperparameter tuning dipilih sebagai model terbaik untuk prediksi risiko penyakit kardiovaskular karena menunjukkan performa terbaik pada data uji, berdasarkan nilai Accuracy dan ROC-AUC.
+
+### Referensi:
+[1] World Health Organization. (2021). Cardiovascular diseases (CVDs). Available: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
+
+[2] Mendis, S., Puska, P., & Norrving, B. (2011). Global Atlas on Cardiovascular Disease Prevention and Control. Geneva: World Health Organization.
+
+[3] Dilsizian, S. E., & Siegel, E. L. (2014). Artificial intelligence in medicine and cardiac imaging: Harnessing big data and advanced computing to provide personalized medical diagnosis and treatment. Current Cardiology Reports, 16(1), 441.
