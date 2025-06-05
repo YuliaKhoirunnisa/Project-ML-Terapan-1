@@ -21,3 +21,15 @@ Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan 
 - **Pernyataan Masalah 3**: Belum tersedia model machine learning yang akurat dan efisien berbasis data klinis sederhana untuk memprediksi risiko penyakit kardiovaskular.
 
 ### Goals
+- **Goal 1**: Mengembangkan model prediksi risiko penyakit kardiovaskular dengan akurasi tinggi berbasis data klinis pasien.
+
+- **Goal 2**: Membandingkan efektivitas dua algoritma machine learning dalam klasifikasi risiko penyakit kardiovaskular.
+
+- **Goal 3**: Menyediakan solusi prediksi dini yang lebih terjangkau dan mudah diakses sebagai alternatif deteksi konvensional.
+
+### Solution Statements
+- **Solusi 1**: Menggunakan algoritma Decision Tree Classifier sebagai baseline model untuk membangun prediksi awal dengan interpretasi yang mudah dipahami.
+
+- **Solusi 2**: Menggunakan algoritma Random Forest Classifier sebagai model ensemble untuk meningkatkan performa dan mengurangi overfitting dari baseline.
+
+- **Solusi Tambahan**: Menggunakan metrik Accuracy dan ROC-AUC sebagai ukuran kinerja model agar solusi terukur secara objektif.
