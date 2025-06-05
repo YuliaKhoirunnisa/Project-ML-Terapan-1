@@ -62,11 +62,19 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 | **0**         | Tidak memiliki penyakit kardiovaskular    | 35,021      | 50.03%     |
 | **1**         | Memiliki penyakit kardiovaskular          | 34,979      | 49.97%     |
 
-- Melihat distribusi umur pasien setelah dikonversi ke tahun
+
 ![distribusi usia pasien](https://github.com/user-attachments/assets/f519c9f2-b4e2-4662-a0dd-f66895d3ebfe)
 
+- Melihat distribusi umur pasien setelah dikonversi ke tahun
+  - Mayoritas pasien berada di usia produktif akhir (40–60 tahun)
+  - Ini sesuai dengan fakta medis bahwa risiko penyakit kardiovaskular meningkat seiring bertambahnya usia, terutama setelah usia 40 tahun
+  - Informasi ini penting untuk menentukan strategi pencegahan dan deteksi dini penyakit kardiovaskular
 
-- Visualisasi korelasi antar fitur menggunakan heatmap.
+
+![heatmap](https://github.com/user-attachments/assets/ba1998cd-2309-462e-a1c9-99a04fb882ff)
+
+- Visualisasi korelasi antar fitur menggunakan heatmap
+
 
 ## Data Preparation
 - Penghapusan kolom `id` karena hanya identifier.
