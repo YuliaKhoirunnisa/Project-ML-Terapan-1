@@ -74,7 +74,14 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 ![heatmap](https://github.com/user-attachments/assets/ba1998cd-2309-462e-a1c9-99a04fb882ff)
 
 - Visualisasi korelasi antar fitur menggunakan heatmap
-
+  - Kolesterol (cholesterol) menunjukkan korelasi positif moderat dengan kadar glukosa (gluc) sebesar 0.45. Ini berarti pasien dengan kadar kolesterol tinggi cenderung memiliki kadar glukosa yang tinggi pula
+  - Jenis kelamin (gender) berkorelasi positif dengan tekanan darah sistolik (ap_hi) sekitar 0.50, menunjukkan bahwa terdapat perbedaan tekanan darah yang cukup jelas antar gender
+  - Usia (age_years) memiliki korelasi positif terhadap penyakit kardiovaskular (cardio) sebesar 0.24. Ini mendukung pemahaman bahwa risiko penyakit ini meningkat seiring bertambahnya usia
+  - Kolesterol (cholesterol) juga berkorelasi positif terhadap target cardio dengan nilai 0.22, memperkuat fakta bahwa kadar kolesterol tinggi meningkatkan risiko penyakit kardiovaskular
+  - Glukosa (gluc) memiliki korelasi positif lemah dengan cardio sebesar 0.089, namun tetap relevan dalam klasifikasi penyakit ini
+  - Variabel lain seperti smoke, alco, dan active menunjukkan korelasi yang sangat rendah terhadap cardio, menandakan bahwa pengaruhnya terhadap prediksi risiko penyakit tidak terlalu besar
+  - ID (id) tidak menunjukkan korelasi signifikan dengan fitur lain, yang memang diharapkan mengingat id hanya merupakan identifier unik
+  - Korelasi antar fitur secara umum tergolong rendah, sehingga tidak ada indikasi multikolinearitas yang kuat dalam dataset ini — hal ini baik untuk model berbasis tree seperti Random Forest yang sensitif terhadap fitur redundant.
 
 ## Data Preparation
 - Penghapusan kolom `id` karena hanya identifier.
