@@ -16,20 +16,22 @@ Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan 
 ### Problem Statements
 - **Pernyataan Masalah 1**: Penyakit kardiovaskular merupakan penyebab utama kematian di dunia, namun metode deteksi dini yang tersedia saat ini masih mahal dan tidak terjangkau bagi seluruh populasi.
 
-- **Pernyataan Masalah 2**: Banyak faktor risiko seperti hipertensi, hiperglikemia, hiperkolesterolemia, obesitas, kebiasaan merokok, dan gaya hidup sedentari sulit diidentifikasi secara dini tanpa alat bantu berbasis data.
+- **Pernyataan Masalah 2**: Identifikasi faktor risiko CVD sulit dilakukan tanpa bantuan alat berbasis data yang efisien.
 
 - **Pernyataan Masalah 3**: Belum tersedia model machine learning yang akurat dan efisien berbasis data klinis sederhana untuk memprediksi risiko penyakit kardiovaskular.
 
 ### Goals
-- **Goal 1**: Mengembangkan model prediksi risiko penyakit kardiovaskular dengan akurasi tinggi berbasis data klinis pasien.
+- **Goal 1**: Mengembangkan model yang mampu prediksi risiko penyakit kardiovaskular dengan akurasi tinggi.
 
 - **Goal 2**: Membandingkan efektivitas dua algoritma machine learning dalam klasifikasi risiko penyakit kardiovaskular.
 
 - **Goal 3**: Menyediakan solusi prediksi dini yang lebih terjangkau dan mudah diakses sebagai alternatif deteksi konvensional.
 
 ### Solution Statements
-- **Solusi 1**: Menggunakan algoritma Decision Tree Classifier sebagai baseline model untuk membangun prediksi awal dengan interpretasi yang mudah dipahami.
+- **Solusi 1**: Menggunakan Decision Tree Classifier sebagai baseline model karena sifatnya yang interpretable dan cepat dalam membangun pohon keputusan dari data klinis.
 
-- **Solusi 2**: Menggunakan algoritma Random Forest Classifier sebagai model ensemble untuk meningkatkan performa dan mengurangi overfitting dari baseline.
+- **Solusi 2**: Menggunakan Random Forest Classifier dengan tuning hyperparameter menggunakan RandomizedSearchCV untuk meningkatkan performa model dari baseline.
 
-- **Solusi Tambahan**: Menggunakan metrik Accuracy dan ROC-AUC sebagai ukuran kinerja model agar solusi terukur secara objektif.
+- **Solution statements**: Model akan dievaluasi menggunakan Accuracy dan ROC-AUC Score untuk mengukur kinerja klasifikasi dan kemampuan membedakan antara kelas pasien yang sehat dan berisiko.
+
+## Data Understanding
