@@ -37,7 +37,8 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 
 **Jumlah Data**: 70000
 **Jumlah Fitur**: 13 kolom
-![struktur dataset](https://github.com/user-attachments/assets/fc9d33f6-6787-4ab4-b0bb-6f6d3c2d3628)
+![dataframe](https://github.com/user-attachments/assets/26c2b04c-45fc-496c-8b65-0e729178cc56)
+
 
 ### Variabel-variabel:
 - `age`: usia pasien dalam satuan hari.
