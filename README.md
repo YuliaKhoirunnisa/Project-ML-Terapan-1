@@ -19,3 +19,5 @@ Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan 
 - **Pernyataan Masalah 2**: Banyak faktor risiko seperti hipertensi, hiperglikemia, hiperkolesterolemia, obesitas, kebiasaan merokok, dan gaya hidup sedentari sulit diidentifikasi secara dini tanpa alat bantu berbasis data.
 
 - **Pernyataan Masalah 3**: Belum tersedia model machine learning yang akurat dan efisien berbasis data klinis sederhana untuk memprediksi risiko penyakit kardiovaskular.
+
+### Goals
