@@ -2,7 +2,6 @@
 ## Domain Proyek
 Domain yang dipakai untuk proyek ini adalah penyakit **Cardiovascular Disease**
 ![kardiovascular](https://github.com/user-attachments/assets/cff4329c-61d2-45cb-89cf-5f41a0644962)
-
 ## Latar Belakang
 Penyakit kardiovaskular (CVD) merupakan penyebab utama kematian global, menyumbang sekitar 32% dari seluruh kematian di dunia, atau sekitar 17,9 juta orang setiap tahunnya [1]. Penyakit ini mencakup gangguan pada jantung dan pembuluh darah, seperti penyakit jantung koroner, penyakit serebrovaskular, dan hipertensi. Banyak faktor risiko yang berkontribusi terhadap terjadinya penyakit ini, termasuk hipertensi, hiperglikemia, hiperkolesterolemia, merokok, obesitas, dan gaya hidup tidak aktif [2].
 
