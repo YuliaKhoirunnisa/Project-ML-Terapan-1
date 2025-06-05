@@ -53,10 +53,9 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 - `cardio`: label target (0: tidak ada penyakit kardiovaskular, 1: ada penyakit kardiovaskular).
 
 ### Exploratory Data Analysis (EDA)
-Melihat distribusi kelas target (`cardio`) untuk memahami apakah ada imbalance.
 ![distribusi target](https://github.com/user-attachments/assets/c7fa28ab-7f75-412a-8693-c713b6b988c3)
 
-
+Melihat distribusi kelas target (`cardio`) untuk memahami apakah ada imbalance.
 | Kelas `cardio` | Deskripsi                                | Jumlah Data | Persentase |
 |---------------|------------------------------------------|-------------|------------|
 | **0**         | Tidak memiliki penyakit kardiovaskular    | 35,021      | 50.03%     |
