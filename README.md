@@ -6,7 +6,7 @@ Deteksi dini terhadap risiko CVD sangat penting untuk menurunkan angka morbidita
 
 Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan dataset Cardiovascular Disease dari Kaggle, dengan tujuan untuk memprediksi risiko CVD berdasarkan data klinis seperti usia, tekanan darah, kadar kolesterol, gaya hidup, dan faktor lainnya. Dengan model prediktif ini, diharapkan dapat membantu tenaga medis dalam pengambilan keputusan klinis secara lebih tepat, cepat, dan berbasis data.
 
-## Referensi:
+### Referensi:
 [1] World Health Organization. (2021). Cardiovascular diseases (CVDs). Available: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
 
 [2] Mendis, S., Puska, P., & Norrving, B. (2011). Global Atlas on Cardiovascular Disease Prevention and Control. Geneva: World Health Organization.
