@@ -36,7 +36,8 @@ Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan 
 Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset). Dataset ini berisi data klinis pasien yang terdiri dari berbagai parameter medis yang umum dikumpulkan dalam pemeriksaan kesehatan rutin.
 
 **Jumlah Data**: 70000
-**Jumlah Fitur**: 13 kolom![struktur dataset](https://github.com/user-attachments/assets/fc9d33f6-6787-4ab4-b0bb-6f6d3c2d3628)
+**Jumlah Fitur**: 13 kolom
+![struktur dataset](https://github.com/user-attachments/assets/fc9d33f6-6787-4ab4-b0bb-6f6d3c2d3628)
 
 ### Variabel-variabel:
 - `age`: usia pasien dalam satuan hari.
@@ -55,6 +56,7 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 ### Exploratory Data Analysis (EDA)
 - Melihat distribusi kelas target (`cardio`) untuk memahami apakah ada imbalance.
 ![distribusi target](https://github.com/user-attachments/assets/c7fa28ab-7f75-412a-8693-c713b6b988c3)
+
 | Kelas `cardio` | Deskripsi                                | Jumlah Data | Persentase |
 |---------------|------------------------------------------|-------------|------------|
 | **0**         | Tidak memiliki penyakit kardiovaskular    | 35,021      | 50.03%     |
