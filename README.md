@@ -36,8 +36,7 @@ Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan 
 Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset). Dataset ini berisi data klinis pasien yang terdiri dari berbagai parameter medis yang umum dikumpulkan dalam pemeriksaan kesehatan rutin.
 
 **Jumlah Data**: 70000
-**Jumlah Fitur**: 13 kolom
-![struktur dataset](https://github.com/user-attachments/assets/fc9d33f6-6787-4ab4-b0bb-6f6d3c2d3628)
+**Jumlah Fitur**: 13 kolom![struktur dataset](https://github.com/user-attachments/assets/fc9d33f6-6787-4ab4-b0bb-6f6d3c2d3628)
 
 ### Variabel-variabel:
 - `age`: usia pasien dalam satuan hari.
