@@ -14,7 +14,7 @@ Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan 
 [3] Dilsizian, S. E., & Siegel, E. L. (2014). Artificial intelligence in medicine and cardiac imaging: Harnessing big data and advanced computing to provide personalized medical diagnosis and treatment. Current Cardiology Reports, 16(1), 441.
 ## Business Understanding
 ### Problem Statements
-- **Pernyataan Masalah 1**: Penyakit kardiovaskular merupakan penyebab utama kematian di dunia, namun metode deteksi dini yang tersedia saat ini masih mahal dan tidak terjangkau bagi seluruh populasi.
+- **Pernyataan Masalah 1**: Penyakit kardiovaskular merupakan salah satu penyebab utama kematian di dunia, namun metode deteksi yang tersedia saat ini masih mahal dan tidak terjangkau bagi seluruh populasi.
 
 - **Pernyataan Masalah 2**: Identifikasi faktor risiko CVD sulit dilakukan tanpa bantuan alat berbasis data yang efisien.
 
