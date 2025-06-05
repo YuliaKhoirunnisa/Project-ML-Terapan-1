@@ -62,8 +62,11 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 | **0**         | Tidak memiliki penyakit kardiovaskular    | 35,021      | 50.03%     |
 | **1**         | Memiliki penyakit kardiovaskular          | 34,979      | 49.97%     |
 
+- Melihat distribusi umur pasien setelah dikonv
+![distribusi usia pasien](https://github.com/user-attachments/assets/f519c9f2-b4e2-4662-a0dd-f66895d3ebfe)
+ersi ke tahun
 
-- Melihat distribusi umur pasien setelah dikonversi ke tahun.
+
 - Visualisasi korelasi antar fitur menggunakan heatmap.
 
 ## Data Preparation
