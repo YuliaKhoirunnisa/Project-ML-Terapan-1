@@ -33,7 +33,7 @@ Dalam proyek ini, saya membangun model klasifikasi machine learning menggunakan 
 - **Solution statements**: Model akan dievaluasi menggunakan Accuracy dan ROC-AUC Score untuk mengukur kinerja klasifikasi dan kemampuan membedakan antara kelas pasien yang sehat dan berisiko.
 
 ## Data Understanding
-Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset). Dataset ini berisi data klinis pasien yang terdiri dari berbagai parameter medis yang umum dikumpulkan dalam pemeriksaan kesehatan rutin.
+Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset). Dataset ini berisi **70,000 baris** dan **13 kolom** data klinis pasien yang terdiri dari berbagai parameter medis yang umum dikumpulkan dalam pemeriksaan kesehatan rutin.
 
 ![struktur dataset](https://github.com/user-attachments/assets/8238770c-c4fb-4252-b053-8c93bb22b620)
 
