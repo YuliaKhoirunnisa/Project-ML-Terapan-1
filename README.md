@@ -38,7 +38,7 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 ![struktur dataset](https://github.com/user-attachments/assets/8238770c-c4fb-4252-b053-8c93bb22b620)
 
 
-**Kondisi Data Awal**
+### **Kondisi Data Awal**
 Berdasarkan hasil data.info(), dataset ini berisi 70,000 baris dan 13 kolom tanpa adanya missing values. Artinya, tidak ditemukan data kosong (NaN) pada dataset, sehingga seluruh data siap untuk diproses lebih lanjut tanpa perlu penanganan nilai hilang (missing value imputation).
 
 Selain itu, berdasarkan data.describe(), ditemukan beberapa potensi outlier, terutama pada kolom tekanan darah:
