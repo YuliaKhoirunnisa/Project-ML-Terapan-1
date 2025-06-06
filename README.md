@@ -38,7 +38,20 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 ![struktur dataset](https://github.com/user-attachments/assets/8238770c-c4fb-4252-b053-8c93bb22b620)
 
 
+**Kondisi Data Awal**
+Berdasarkan hasil data.info(), dataset ini berisi 70,000 baris dan 13 kolom tanpa adanya missing values. Artinya, tidak ditemukan data kosong (NaN) pada dataset, sehingga seluruh data siap untuk diproses lebih lanjut tanpa perlu penanganan nilai hilang (missing value imputation).
+
+Selain itu, berdasarkan data.describe(), ditemukan beberapa potensi outlier, terutama pada kolom tekanan darah:
+
+ap_hi (Tekanan Darah Sistolik) memiliki nilai minimum negatif (-150) dan maksimum 16020, yang berada jauh di luar rentang tekanan darah normal (120–140 mmHg untuk sistolik).
+
+ap_lo (Tekanan Darah Diastolik) juga memiliki nilai minimum negatif (-70) dan maksimum 11000, jauh di atas rentang normal (80–90 mmHg untuk diastolik).
+
+Nilai-nilai ekstrem ini menunjukkan adanya data outlier atau kesalahan input data (data entry error), yang sebaiknya dipertimbangkan untuk ditangani (misalnya dengan filtering atau winsorization) dalam tahap preprocessing.
+
+
 ### Variabel-variabel:
+- `id`: Identifier unik untuk masing-masing pasien.
 - `age`: usia pasien dalam satuan hari.
 - `gender`: jenis kelamin (1: perempuan, 2: laki-laki).
 - `height`: tinggi badan dalam sentimeter.
