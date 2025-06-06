@@ -39,15 +39,13 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 
 
 ### **Kondisi Data Awal**
-Berdasarkan hasil data.info(), dataset ini berisi 70,000 baris dan 13 kolom tanpa adanya missing values. Artinya, tidak ditemukan data kosong (NaN) pada dataset, sehingga seluruh data siap untuk diproses lebih lanjut tanpa perlu penanganan nilai hilang (missing value imputation).
+Berdasarkan hasil data.describe(), ditemukan beberapa potensi outlier, terutama pada kolom tekanan darah:
 
-Selain itu, berdasarkan data.describe(), ditemukan beberapa potensi outlier, terutama pada kolom tekanan darah:
+ap_hi (Tekanan Darah Sistolik) memiliki nilai minimum negatif (-150) dan maksimum 16020, jauh di luar rentang normal.
 
-ap_hi (Tekanan Darah Sistolik) memiliki nilai minimum negatif (-150) dan maksimum 16020, yang berada jauh di luar rentang tekanan darah normal (120–140 mmHg untuk sistolik).
+ap_lo (Tekanan Darah Diastolik) juga memiliki nilai minimum negatif (-70) dan maksimum 11000.
 
-ap_lo (Tekanan Darah Diastolik) juga memiliki nilai minimum negatif (-70) dan maksimum 11000, jauh di atas rentang normal (80–90 mmHg untuk diastolik).
-
-Nilai-nilai ekstrem ini menunjukkan adanya data outlier atau kesalahan input data (data entry error), yang sebaiknya dipertimbangkan untuk ditangani (misalnya dengan filtering atau winsorization) dalam tahap preprocessing.
+Nilai-nilai ekstrem ini menunjukkan adanya potensi anomali data, seperti kesalahan input. Namun, dalam proyek ini, tidak dilakukan penanganan outlier secara khusus agar menjaga keutuhan dataset dan menghindari penghilangan data secara agresif. Handling outlier seperti filtering atau winsorization dapat dipertimbangkan pada pengembangan model di tahap lanjutan.
 
 
 ### Variabel-variabel:
@@ -105,20 +103,30 @@ Nilai-nilai ekstrem ini menunjukkan adanya data outlier atau kesalahan input dat
 Tahapan ini diperlukan untuk membersihkan data dari noise, memudahkan interpretasi, mempercepat proses training, dan meningkatkan performa model.
 
 ## Modeling
+### Cara Kerja Algoritma
+
 ### Model 1: Decision Tree Classifier
+Decision Tree membangun model berupa struktur pohon keputusan dengan memilih fitur yang paling baik memisahkan data berdasarkan Gini Impurity atau Entropy. Proses pemisahan dilakukan secara rekursif hingga data pada node homogen atau memenuhi kriteria penghentian.
 - **Kelebihan**: Mudah dipahami, cepat.
 - **Kekurangan**: Cenderung overfitting.
 - **Parameter**: default (`random_state=42`).
 
-### Model 2: Random Forest Classifier (with RandomizedSearchCV)
+### Model 2: Random Forest Classifier
+Random Forest adalah metode ensemble yang menggabungkan banyak Decision Tree. Setiap pohon dilatih dengan data bootstrap sampling, dan subset fitur dipilih secara acak untuk split. Prediksi akhir menggunakan voting mayoritas dari semua pohon.
 - **Kelebihan**: Mengurangi overfitting, robust.
 - **Kekurangan**: Training lebih lama.
-- **Improvement**: Hyperparameter tuning dengan RandomizedSearchCV:
-  - `n_estimators`: [100, 200, 300]
-  - `max_depth`: [10, 20, 30, None]
-  - `min_samples_split`: [2, 5, 10]
-  - `min_samples_leaf`: [1, 2, 4]
-  - Cross-validation 5-Fold, scoring menggunakan `accuracy`.
+
+### Parameter Tuning (RandomizedSearchCV)
+Parameter tuning dilakukan menggunakan RandomizedSearchCV dengan ruang pencarian:
+
+| Parameter             | Distribusi Pencarian                        |
+|-----------------------|---------------------------------------------|
+| `n_estimators`         | randint(100, 300)                           |
+| `max_depth`            | [10, 20, 30, None]                          |
+| `min_samples_split`    | randint(2, 10)                              |
+| `min_samples_leaf`     | randint(1, 4)                               |
+
+Proses tuning mencari kombinasi parameter optimal berdasarkan akurasi menggunakan 5-Fold Cross-Validation.
  
 ## Evaluation
 ### Metrik yang Digunakan
