@@ -40,10 +40,8 @@ Dataset yang digunakan adalah **Cardiovascular Disease Dataset** dari [Kaggle](h
 
 ### **Kondisi Data Awal**
 Berdasarkan hasil data.describe(), ditemukan beberapa potensi outlier, terutama pada kolom tekanan darah:
-
-ap_hi (Tekanan Darah Sistolik) memiliki nilai minimum negatif (-150) dan maksimum 16020, jauh di luar rentang normal.
-
-ap_lo (Tekanan Darah Diastolik) juga memiliki nilai minimum negatif (-70) dan maksimum 11000.
+- ap_hi (Tekanan Darah Sistolik) memiliki nilai minimum negatif (-150) dan maksimum 16020, jauh di luar rentang normal.
+- ap_lo (Tekanan Darah Diastolik) juga memiliki nilai minimum negatif (-70) dan maksimum 11000.
 
 Nilai-nilai ekstrem ini menunjukkan adanya potensi anomali data, seperti kesalahan input. Namun, dalam proyek ini, tidak dilakukan penanganan outlier secara khusus agar menjaga keutuhan dataset dan menghindari penghilangan data secara agresif. Handling outlier seperti filtering atau winsorization dapat dipertimbangkan pada pengembangan model di tahap lanjutan.
 
