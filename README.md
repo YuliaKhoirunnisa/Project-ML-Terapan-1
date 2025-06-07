@@ -129,8 +129,9 @@ Proses tuning mencari kombinasi parameter optimal berdasarkan akurasi menggunaka
 ## Evaluation
 ### Metrik yang Digunakan
 - **Accuracy**: Persentase prediksi benar.
-  \\[  \text{Accuracy} = \frac{TP + TN}{\text{Total}}  \\]
 - **ROC-AUC Score**: Kemampuan membedakan antara kelas 0 dan 1.
+
+  \\[  \text{Accuracy} = \frac{TP + TN}{\text{Total}}  \\]
 
 ### Hasil Evaluasi
 | Model                          | Accuracy | ROC-AUC |
