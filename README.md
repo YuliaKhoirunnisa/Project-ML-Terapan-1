@@ -129,17 +129,23 @@ Proses tuning mencari kombinasi parameter optimal berdasarkan akurasi menggunaka
 ## Evaluation
 ### Metrik yang Digunakan
 - **Accuracy**: Persentase prediksi benar.
-\[ \text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{Total}} \]
+  \[ \text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{Total}} \]
 - **ROC-AUC Score**: Kemampuan membedakan antara kelas 0 dan 1.
 
 ### Hasil Evaluasi
 | Model                          | Accuracy | ROC-AUC |
 |---------------------------------|----------|---------|
-| Decision Tree Classifier        | 62.9%    | 0.629   |
+| Decision Tree Classifier        | 62.9%    | 0.630   |
 | Random Forest (RandomizedSearchCV) | 74.0%  | 0.802   |
 
 ### Kesimpulan
-Model Random Forest Classifier dengan hyperparameter tuning dipilih sebagai model terbaik untuk prediksi risiko penyakit kardiovaskular karena menunjukkan performa terbaik pada data uji, berdasarkan nilai Accuracy dan ROC-AUC.
+Model **Random Forest Classifier** dengan hyperparameter tuning dipilih sebagai model terbaik untuk prediksi risiko penyakit kardiovaskular karena menunjukkan performa terbaik pada data uji, dengan akurasi sebesar **74.0%** dan ROC-AUC sebesar **0.802**.
+
+Model ini memberikan solusi terhadap **Pernyataan Masalah 1**, yaitu menyediakan metode deteksi dini yang lebih murah dan terjangkau, karena hanya menggunakan data klinis sederhana yang relatif mudah dikumpulkan tanpa pemeriksaan mahal seperti imaging.
+
+Selain itu, model ini juga membantu **identifikasi faktor risiko** penyakit kardiovaskular (**Pernyataan Masalah 2**) dengan menunjukkan fitur-fitur penting seperti usia, kolesterol, dan glukosa dalam meningkatkan risiko.
+
+Dengan demikian, model ini dapat berkontribusi dalam upaya deteksi dini dan pencegahan penyakit kardiovaskular secara lebih efisien dan berbasis data.
 
 ### Referensi:
 [1] World Health Organization. (2021). Cardiovascular diseases (CVDs). Available: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
